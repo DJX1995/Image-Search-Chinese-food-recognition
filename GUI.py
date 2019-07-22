@@ -29,7 +29,7 @@ class Window(QWidget):
 
         # create buttons
         self.btn1 = QPushButton("Show Recognition Result", self)
-        self.btn1.move(250, 50)
+        self.btn1.move(400, 50)
         self.btn1.clicked.connect(self.bt_show_image)
         self.btn2 = QPushButton("Open a Target Image", self)
         self.btn2.move(50, 50)
@@ -45,7 +45,7 @@ class Window(QWidget):
         # create a label showing an image to recognize
         self.lb_target = QLabel(self)
         self.lb_target.setFixedSize(100, 100)
-        self.lb_target.move(150, 100)
+        self.lb_target.move(120, 200)
 
         self.lb_target2 = QLabel(self)
         self.lb_target2.setFixedSize(100, 100)
@@ -53,7 +53,7 @@ class Window(QWidget):
 
         # create a text editor to display processing result
         self.textedit = QTextEdit(self)
-        self.textedit.setGeometry(400, 100, 500, 200)
+        self.textedit.setGeometry(400, 150, 500, 200)
 
 
     def bt_show_image(self):
